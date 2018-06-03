@@ -1,5 +1,3 @@
-
-
 class Circle
   def area
     area = Math::PI * @radius * @radius
