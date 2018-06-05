@@ -1,0 +1,15 @@
+def divisors_of(num)
+    (1..num-1).select{|n|num % n == 0}
+end
+
+
+sum = 0
+(1..10000).each do |n|
+    m = divisors_of(n).sum
+    if (divisors_of(m).sum == n) && (n != m)
+        sum = sum + n 
+        puts n
+    end
+end
+
+puts sum
